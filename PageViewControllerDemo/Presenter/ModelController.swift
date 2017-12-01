@@ -21,6 +21,7 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
     var pageData: [String] = []
+    var pageImageData: [UIImage] = []
 
 
     override init() {
@@ -28,6 +29,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         // Create the data model.
         let dateFormatter = DateFormatter()
         pageData = dateFormatter.monthSymbols
+        pageImageData = [UIImage(named: "january")!,UIImage(named: "feb")!,UIImage(named: "march")!,UIImage(named: "april")!,UIImage(named: "may")!,UIImage(named: "june")!,UIImage(named: "july")!,UIImage(named: "agust")!,UIImage(named: "sep")!,UIImage(named: "oct")!,UIImage(named: "nov")!,UIImage(named: "dec")!]
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -39,6 +41,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
         dataViewController.dataObject = self.pageData[index]
+        dataViewController.imageObject = self.pageImageData[index]
         return dataViewController
     }
 
