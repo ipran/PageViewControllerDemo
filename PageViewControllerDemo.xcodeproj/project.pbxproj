@@ -101,10 +101,9 @@
 		3D107D3E1FCE950C00D3EC2E /* PageViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D6DE3451FD18B1B00238683 /* Presenter */,
+				3D107D711FCE954600D3EC2E /* View */,
 				3D107D3F1FCE950C00D3EC2E /* AppDelegate.swift */,
-				3D107D411FCE950C00D3EC2E /* RootViewController.swift */,
-				3D107D431FCE950C00D3EC2E /* DataViewController.swift */,
-				3D107D451FCE950C00D3EC2E /* ModelController.swift */,
 				3D107D471FCE950C00D3EC2E /* Main.storyboard */,
 				3D107D4A1FCE950C00D3EC2E /* Assets.xcassets */,
 				3D107D4C1FCE950C00D3EC2E /* LaunchScreen.storyboard */,
@@ -129,6 +128,23 @@
 				3D107D651FCE950C00D3EC2E /* Info.plist */,
 			);
 			path = PageViewControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		3D107D711FCE954600D3EC2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D107D411FCE950C00D3EC2E /* RootViewController.swift */,
+				3D107D431FCE950C00D3EC2E /* DataViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D6DE3451FD18B1B00238683 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3D107D451FCE950C00D3EC2E /* ModelController.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
